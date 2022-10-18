@@ -1,3 +1,6 @@
+import pandas as pd
+import numpy as np
+
 ones = list(np.ones(30))
 ones.append(np.nan)
 
