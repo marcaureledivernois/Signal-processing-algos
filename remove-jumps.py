@@ -1,3 +1,9 @@
+"""
+This script removes discontinuities/jumps in a time-serie. It computes the median of the beginning of a segment and the median of the end of the previous segment. 
+It then shifts the rest of the time-serie based on the difference between the medians. The result is a signal corrected from discontinuities.
+This algorithm keeps the potential trends inter-segments and intra-segments.
+"""
+
 import pandas as pd
 import numpy as np
 
